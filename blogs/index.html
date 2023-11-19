@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Card</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+  <!-- font-awesome css link -->
+  <link rel="stylesheet" type="text/css" href="/css/fontawesome-all.min.css">
+  <!-- custom style css link -->
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <!-- responsive css link -->
+  <link rel="stylesheet" type="text/css" href="/css/responsive.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <style>
+      @font-face {
+        font-family: "PFDinTextPro-Light";
+        font-style: normal;
+        font-weight: normal;
+        src: local("PFDinTextPro-Light"),
+          url("PFDinTextPro-Light.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: "PFDinTextPro-LightItalic";
+        font-style: normal;
+        font-weight: normal;
+        src: local("PFDinTextPro-LightItalic"),
+          url("PFDinTextPro-LightItalic.woff") format("woff");
+      }
+
+      body {
+        background-color: #efeff0;
+      }
+
+      .main-card-col .card {
+        box-shadow: 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.29);
+        border-radius: 12px;
+      }
+
+      .card {
+        background-color: #fff;
+        width: 350px;
+        height: 480px;
+      }
+
+      /* card img */
+      .cardImageOne {
+        height: 12.5rem;
+        border-radius: 12px 12px 0 0;
+        background: url(/images/card_size/announcing-exponent-cloud-mail_sm.png) no-repeat center center;
+        background-size: cover;
+      }
+
+      .cardImageTwo {
+        height: 12.5rem;
+        border-radius: 12px 12px 0 0;
+        background: url(./img-0012.jpg) no-repeat center center;
+        background-size: cover;
+      }
+
+      .cardImageThree {
+        height: 12.5rem;
+        border-radius: 12px 12px 0 0;
+        background: url(./img-0013.jpg) no-repeat center center;
+        background-size: cover;
+      }
+
+      /* end card img */
+
+      .cardLink {
+        text-decoration: none;
+        color: #000;
+      }
+
+      .card-title {
+        font-size: 24px;
+        font-weight: 400;
+      }
+
+      .card-text {
+        font-size: 16px;
+      }
+
+      .card-body span {
+        font-size: 12px;
+        color: #707070;
+      }
+
+      .cardfooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .arrowbtn {
+        border: 1px solid #2a7ab4;
+        color: #2a7ab4;
+        border-radius: 1rem;
+      }
+
+      .arrowbtn:hover {
+        background: #2a7ab4;
+        color: #fff;
+      }
+
+      .card-sec {
+        transition: transform 0.4s ease;
+        border-radius: 12px;
+        padding: 0;
+      }
+
+      .card-sec:hover {
+        transform: translateY(-10px);
+      }
+
+      .main-card-col {
+        margin: 2rem 1.25rem;
+        box-sizing: border-box;
+      }
+
+      .card-body {
+        padding: 1.5rem 2rem;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      .top_bar_right > ul {
+        margin-bottom: 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="top_bar">
+        <div class="container">
+          <div class="top_bar_right">
+            <ul>
+              <li><a href="about.asp">API Forensics</a></li>
+              <!--<li><span><i class="fas fa-user"></i></span> <a href="#">Login</a> | <a href="#">Signup</a></li>-->
+              <li><span><i class="fas fa-phone-alt"></i></span> <a
+                  href="contact.asp">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header">
+        <div class="container">
+          <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="#"><img src="/images/logo.png"
+                alt="images"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i
+                  class="fa fa-bars"></i></span> </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"> <a class="nav-link"
+                    href="/">Home</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown dropdown-mega position-static">
+                  <a class="nav-link dropdown-toggle" href="#"
+                    data-bs-toggle="dropdown" data-bs-auto-close="outside">Products</a>
+                  <div class="dropdown-menu shadow">
+                    <div class="mega-content px-4 py-2">
+                      <div class="container-fluid">
+                        <div class="row py-2">
+                          <div class="col-12 col-sm-6 col-md-6 px-0">
+                            <a href="#">
+                              <span class="nav-link-img">
+                                <img src="/images/email-1.jpg" class="img-fluid"
+                                  width="40" height="40" alt="image">
+                              </span>
+                              <div class="nav-link-content">
+                                <span class="main-title">Exponent Cloud Mail</span>
+                                <span class="sub-title">Search, filter and
+                                  import IMAP mail and attachments directly into
+                                  X-Ways Forensics from 3rd party providers.</span>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-12 col-sm-6 col-md-6 px-0">
+                            <a href="#">
+                              <span class="nav-link-img">
+                                <img src="/images/texting-1.jpg"
+                                  class="img-fluid" width="40" height="40"
+                                  alt="image">
+                              </span>
+                              <div class="nav-link-content">
+                                <span class="main-title">Exponent Mobile
+                                  Messaging</span>
+                                <span class="sub-title">Import and examine
+                                  limited 3rd party acquired mobile device
+                                  communications with support for emojis and
+                                  conversation view.</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="row py-2">
+
+                          <div class="col-12 col-sm-6 col-md-6 px-0">
+                            <a href="#">
+                              <span class="nav-link-img">
+                                <img src="/images/camera-lens.jpg"
+                                  class="img-fluid" width="40" height="40"
+                                  alt="image">
+                              </span>
+                              <div class="nav-link-content">
+                                <span class="main-title">Exponent Mobile Media</span>
+                                <span class="sub-title">Import and merge video
+                                  and picture files from mobile devices.</span>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-12 col-sm-6 col-md-6 px-0">
+                            <a href="#">
+                              <span class="nav-link-img">
+                                <img src="/images/face-recognition-1.jpg"
+                                  class="img-fluid" width="50" height="50"
+                                  alt="image">
+                              </span>
+                              <div class="nav-link-content">
+                                <span class="main-title">Exponent Facial
+                                  Recognition</span>
+                                <span class="sub-title">Accurately identify,
+                                  match and extract faces from photos and movie
+                                  files.</span>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="row py-2">
+                          <div class="col-12 col-sm-6 col-md-6 px-0">
+                            <a href="#">
+                              <span class="nav-link-img">
+                                <img src="/images/cyber-1.jpg" class="img-fluid"
+                                  width="40" height="40" alt="image">
+                              </span>
+                              <div class="nav-link-content">
+                                <span class="main-title">Exponent Cyber</span>
+                                <span class="sub-title">Investigate your network
+                                  for possible threats and vulnerabilities.</span>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-12 col-sm-6 col-md-6 px-0"
+                            style="padding: 10px !important">
+                            <a href="#" class="all-products">
+                              <span class="view-all">View All Products <i
+                                  class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            </a>
+                          </div>
+                        </div>
+                        <!--<div class="row" style="width: 100%">
+                                  <div class="col-12 col-sm-4 col-md-6 px-0">
+                                     <a href="#">
+                                       <span class="nav-link-img">
+                                         <img src="images/cyber-1.jpg" class="img-fluid" width="40" height="40" alt="image">
+                                       </span>
+                                       <div class="nav-link-content">
+                                         <span class="main-title">Exponent Cyber Hunting</span>
+                                         <span class="sub-title">Scan your network for possible threats and vulnerabilities</span>
+                                       </div>
+                                     </a>
+                                  </div>
+                                  <div class="col-12 col-sm-4 col-md-4 px-0">
+                                  </div>
+                                </div>-->
+
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href>Download</a>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href>Buy</a> </li>
+                <li class="nav-item"> <a class="nav-link" href>Support</a> </li>
+                <li class="nav-item"> <a class="nav-link"
+                    href="/blogs">Blogs</a> </li>
+                <li class="nav-item"> <a class="nav-link" href>FAQ</a></li>
+                <li class="nav-item nav-item-btn"> <a class="nav-link" href>FREE
+                    TRIAL</a> </li>
+              </ul>
+
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="banner-inner banner_faq">
+      <div class="container">
+        <div class="banner_text">
+          <h1>FAQ</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+    <div class="container my-4">
+      <div class="row">
+        <!-- card -->
+        <div class="col-md-4 card-sec">
+          <a href="announcing-exponent-cloud-mail-1-0.html" class="cardLink">
+            <div class="main-card-col">
+              <div class="card">
+                <!-- <img src="./image-001.png" class="card-img-top" /> -->
+                <div class="cardImageOne"></div>
+                <div class="card-body p-4">
+                  <h5 class="card-title">
+                    Announcing the Release of Exponent CloudMail<sup><small><small>TM</small></small></sup>
+                    1.0
+                  </h5>
+                  <p class="card-text mb-5">
+                    API Forensics is proud to announce the launch of Exponent
+                    CloudMail<sup><small>TM</small></sup>, the first in a series
+                    of products belonging to the Exponent API<sup><small><small>TM</small></small></sup>
+                    library . . .
+                  </p>
+                  <div class="cardfooter">
+                    <span>About a 3 minute view</span>
+                    <a href="#" class="btn arrowbtn px-3 py-0">
+                      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end card -->
+
+        <!-- card -->
+        <div class="col-md-4 card-sec">
+          <a href="#" class="cardLink">
+            <div class="main-card-col">
+              <div class="card">
+                <!-- <img src="./image-001.png" class="card-img-top" /> -->
+                <div class="cardImageTwo"></div>
+                <div class="card-body p-4">
+                  <h5 class="card-title">
+                    Special Announcement #2...
+                  </h5>
+                  <p class="card-text mb-5">
+                    This is a special announcement for something great and
+                    terrific ...
+                  </p>
+                  <div class="cardfooter">
+                    <span>About a 3 minute view</span>
+                    <a href="#" class="btn arrowbtn px-3 py-0">
+                      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end card -->
+
+        <!-- card -->
+        <div class="col-md-4 card-sec">
+          <a href="#" class="cardLink">
+            <div class="main-card-col">
+              <div class="card">
+                <!-- <img src="./image-001.png" class="card-img-top" /> -->
+                <div class="cardImageThree"></div>
+                <div class="card-body p-4">
+                  <h5 class="card-title">
+                    Special Announcement #3...
+                  </h5>
+                  <p class="card-text mb-5">
+                    This is a special announcement for something great and
+                    terrific ...
+                  </p>
+                  <div class="cardfooter">
+                    <span>About a 3 minute view</span>
+                    <a href="#" class="btn arrowbtn px-3 py-0">
+                      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- end card -->
+      </div>
+    </div>
+    <!-- footer start here -->
+    <footer>
+      <div class="footer">
+        <div class>
+          <div class="container">
+            <div class="footer_inner">
+              <div class="footer_boxes">
+                <div class="row">
+                  <div
+                    class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 ftr_bx1">
+                    <div class="footer_box"> <img src="/images/logo.png"
+                        alt="images" class="footer-logo">
+
+                      <p>We are a proudly Canadian owned company founded in
+                        2001, specializing in forensics software development
+                        &amp; training, digital investigations and advisory
+                        services. Over 25 years of law enforcement and private
+                        industry experience. Recognized and awarded by SC
+                        Magazine. Supporting forensic practitioners and cyber
+                        security professionals worldwide.</p>
+                      <ul class="footer_social">
+                        <!--<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>-->
+                        <!--<li><a href="#"><i class="fab fa-twitter"></i></a></li>-->
+                        <!--<li><a href="#"><i class="fab fa-linkedin"></i></a></li>-->
+                        <!--<li><a href="#"><i class="fab fa-pinterest"></i></a></li>-->
+                        <!--<li><a href="#"><i class="fab fa-skype"></i></a></li>-->
+                        <li><a href="https://www.youtube.com/@apiforensics"><i
+                              class="fab fa-youtube"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="ftr_bx2">
+                    <div class="footer_box footer_box_menu">
+                      <div class="footer_menu_bx">
+                        <h2>Our Links</h2>
+                        <ul>
+                          <li><a href="/">Home</a></li>
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">Products</a></li>
+                          <li><a href="#">Download</a></li>
+                          <li><a href="#">Buy</a></li>
+                          <li><a href="#">Support</a></li>
+                          <li><a href="#">News</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ftr_bx3">
+                    <div class="footer_box footer_box_menu">
+                      <div class="footer_menu_bx">
+                        <h2>Our Links</h2>
+                        <ul>
+                          <li><a href="#">Privacy Policy</a></li>
+                          <li><a href="#">Terms of Use</a></li>
+                          <li><a href="#">Resellers</a></li>
+                          <li><a href="#">Product Updates</a></li>
+                          <!--<li><a href="our-clients.asp">Our Clients</a></li>-->
+                          <li><a href="#">Client Reviews</a></li>
+                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="f#">FAQ</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ftr_bx4">
+                    <div class="footer_box footer_box_menu">
+
+                      <div class="footer_box cnctBx footer_menu_bx">
+                        <h2>Contact us</h2>
+                        <div class="footer_add_bx">
+                          <ul>
+                            <li><span><i class="fa fa-map-marker-alt"></i></span>
+                              1300 King Street East<br>Oshawa, ON &nbsp;L1H 8J4<br>Canada</li>
+                            <!--
+        <li><span><i class="fas fa-phone-alt"></i></span> 071 244 33 33</li>
+                  <li><span><i class="fas fa-phone-alt"></i></span> 071 244 33 33</li>
+                  -->
+                            <li><span><i class="fas fa-envelope"></i></span>info@apiforensics.com</li>
+
+                          </ul>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end here -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+    <script
+      src="https://kit.fontawesome.com/0fd0c943a5.js"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
